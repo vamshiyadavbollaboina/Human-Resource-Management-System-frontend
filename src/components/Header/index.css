@@ -1,0 +1,79 @@
+/* Header styling */
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background-color: #4CAF50;
+  color: white;
+  flex-wrap: wrap;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.app-title {
+  margin: 0;
+  font-size: 24px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.nav-links a,
+.nav-links .logout-btn {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.nav-links a.active {
+  border-bottom: 2px solid #fff;
+}
+
+.nav-links .logout-btn:hover,
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+/* Menu toggle button (mobile) */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: 1px solid white;
+  color: white;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+    display: none;
+    margin-top: 10px;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .nav-links a,
+  .nav-links .logout-btn {
+    padding: 10px 0;
+    width: 100%;
+    text-align: center;
+  }
+}

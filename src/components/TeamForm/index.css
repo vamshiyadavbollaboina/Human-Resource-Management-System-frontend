@@ -1,0 +1,76 @@
+/* src/components/index.css or TeamForm.css */
+
+/* Team Form */
+.team-form {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 25px 20px;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Input fields */
+.team-form input,
+.team-form textarea {
+  width: 94%;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: all 0.2s ease;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.team-form input:focus,
+.team-form textarea:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+  outline: none;
+}
+
+/* Textarea sizing */
+.team-form textarea {
+  resize: vertical;
+  min-height: 80px;
+  max-height: 200px;
+}
+
+/* Submit Button */
+.team-form button {
+  padding: 10px 16px;
+  background-color: #007bff;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.team-form button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+.team-form button:active {
+  transform: translateY(0);
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+  .team-form {
+    padding: 20px 15px;
+    gap: 12px;
+  }
+
+  .team-form button {
+    font-size: 14px;
+    padding: 8px 14px;
+  }
+}
