@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_BASE = 'http://localhost:5000'; // backend URL
+const API_BASE = 'https://human-resource-management-system-backend-3d3f.onrender.com/'; // backend URL
 
 // Create axios instance
 const api = axios.create({
