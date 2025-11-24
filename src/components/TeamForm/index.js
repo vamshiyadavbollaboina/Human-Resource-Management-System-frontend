@@ -1,18 +1,4 @@
-// // import React, { useState } from 'react';
-// // import './index.css';
-// // import { addTeam } from '../../services/api';
 
-// // function TeamForm({ onAdd }) {
-// //   const [name, setName] = useState('');
-
-// //   const handleSubmit = async (e) => {
-// //     e.preventDefault();
-// //     try {
-// //       await addTeam({ name });
-// //       setName('');
-// //       onAdd();
-// //     } catch (err) {
-// //       alert('Failed to add team!');
 import React, { useState } from 'react';
 import { addTeam } from '../../services/api';
 import './index.css';
